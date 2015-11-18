@@ -1,5 +1,8 @@
 {% load staticfiles %}
 <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'polls/bootstrap-3.3.5-dist/css/bootstrap.css' %}" />
+
+<script type="text/javascript" src="{% static 'polls/bootstrap-3.3.5-dist/js/bootstrap.js' %}"></script>
 {% if latest_question_list %}
     <ul>
     {% for question in latest_question_list %}
